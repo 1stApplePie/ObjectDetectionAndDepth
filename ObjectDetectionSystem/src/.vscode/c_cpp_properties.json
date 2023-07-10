@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nvidia/xycar_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/nvidia/xycar_ws/src/ObjectDetectionSystem/include/**",
+        "/home/nvidia/xycar_ws/src/xycar_device/darknet_ros/darknet_ros/include/**",
+        "/home/nvidia/xycar_ws/src/image_calibration_test/include/**",
+        "/home/nvidia/xycar_ws/src/xycar_device/usb_cam/include/**",
+        "/home/nvidia/xycar_ws/src/xycar_device/vesc/vesc_ackermann/include/**",
+        "/home/nvidia/xycar_ws/src/xycar_device/vesc/vesc_driver/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

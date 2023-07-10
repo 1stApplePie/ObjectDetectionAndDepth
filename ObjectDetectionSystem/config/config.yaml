@@ -1,0 +1,60 @@
+IMAGE:
+  WIDTH: 640
+  HEIGHT: 480
+  ROI_HEIGHT: 100
+
+XYCAR:
+  START_SPEED: 3.0
+  MAX_SPEED: 5.0
+  MIN_SPEED: 3.0
+  SPEED_CONTROL_THRESHOLD: 12.0
+  ACCELERATION_STEP: 0.01
+  DECELERATION_STEP: 0.1
+
+CTE:
+  CTE_ERROR: 0.245
+
+PID:
+  P_GAIN: 0.75
+  I_GAIN: 0.00
+  D_GAIN: 0.01
+
+MOVING_AVERAGE_FILTER:
+  SAMPLE_SIZE: 30
+
+TOPIC:
+  PUB_NAME: /xycar_motor
+  SUB_NAME: /usb_cam/image_raw/
+  QUEUE_SIZE: 1
+
+CANNY:
+  LOW_THRESHOLD: 165
+  HIGH_THRESHOLD: 255
+
+HOUGH:
+  ABS_SLOPE_RANGE: 10.0
+  THRESHOLD: 20
+  MIN_LINE_LENGTH: 15
+  MAX_LINE_GAP: 5
+
+Lane:
+  left_idx_first: 40
+  left_idx_last: 310
+  right_idx_first: 330
+  right_idx_last: 600
+  min_p4: 800
+  max_p4: 4500
+  p3: 40
+  discard: 3000
+
+DBSCAN:
+  epsilon: 20.0
+  minimum_points: 4  
+
+DYNAMIC:
+  ANGLE: 45
+  NUM_OBSTACLES: 10
+  MIN_RANGE: 0.05
+  MAX_RANGE: 0.3
+
+DEBUG: False
