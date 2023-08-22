@@ -113,6 +113,9 @@ tensorboard --logdir=./output --port 8888
 
 -------------------------
 
+## Report
+[Team 6](https://drive.google.com/file/d/1-aHrzG0ZvKBnh83K3G3UqWG3UdYtxPuK/view?usp=drive_link)
+
 # Reference
 
 [YOLOv3 paper](https://arxiv.org/abs/1804.02767)
